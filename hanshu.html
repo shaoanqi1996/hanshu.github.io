@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<script>
+var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var kMax = 0;
+var m = 0;
+for(var i = 0; i<=a.length-1; i++){
+  var k = 0;
+  for(var j = 0; j<=a.length-1; j++){
+    if (a[i] == a [j]){          //a[i]和每个数据项作比较，是否相等
+      k++;          //若相等，k就增加1
+    }
+  }
+  if (k>kMax){
+    kMax = k;          //若k大于kMax，就把k的值赋给kMax
+    m = a[i];          //m等于a[i]的值
+  }
+}
+document.write(m);          //输出m，结果是a
+</script>
+
+</body>
+</html>
